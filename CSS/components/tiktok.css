@@ -1,0 +1,88 @@
+.grid-container {
+  columns: 3 500px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.truc {
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border: solid 2px black;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+  background-color: #E0FCFC;
+  height: auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 300%; /* 2:3 aspect ratio */
+  background-color: #E0FCFC;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(90%);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.video-container:hover video {
+  filter: grayscale(0);
+}
+
+.video-container::-webkit-media-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.video-container::-webkit-media-controls-play-button,
+.video-container::-webkit-media-controls-mute-button,
+.video-container::-webkit-media-controls-timeline {
+  display: none;
+}
+
+.video-container::-webkit-media-controls-current-time-display,
+.video-container::-webkit-media-controls-time-remaining-display {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.tiktok h1 {
+  flex-grow: 1;
+  padding-left: 20px;
+  font-size: 60px;
+  text-align: center;
+  color: #4AA3A2;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  ont-family: 'Climate Crisis', serif;
+}
+
+
+.pw {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: bold;
+}
+
+.tiktok{
+  background-color: #FFDFEB;;
+}

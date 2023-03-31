@@ -1,0 +1,40 @@
+.btn-blue {
+background-color: #DB6A8F;
+padding: 15px 20px;
+border-radius: 20px;
+color: white;
+font-weight: bold;
+font-family: 'Merriweather', serif;
+text-decoration: none;
+display: inline-block;
+transition: all 0.3s ease;
+margin-top: 20px;
+margin-left: 0px;
+}
+
+.btn-blue:hover {
+background-color: #A7E0E0;
+color: black;
+}
+
+
+.btn-blue2 {
+background-color: #4AA3A2;
+padding: 15px 20px;
+border-radius: 20px;
+color: white;
+font-weight: bold;
+font-family: 'Merriweather', serif;
+text-decoration: none;
+display: inline-block;
+transition: all 0.3s ease;
+margin-top: 20px;
+margin-left: 0px;
+}
+
+.btn-blue2:hover {
+background-color: #FFDFEB ;
+color: black;
+}
+
+
