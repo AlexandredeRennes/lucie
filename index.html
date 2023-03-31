@@ -245,7 +245,7 @@ confettiBtn.addEventListener('click', () => {
     </a>
 
 <h1> - OH OH - </h1>
-<div class="card-defile" onclick="defiler()">
+            <div class="card-defile" onclick="defiler()">
   <img src="images/savon.jpg" alt="Image 1">
     <div class="fleche-gauche" onclick="defiler(-1)">&lt;</div>
     <div class="fleche-droite" onclick="defiler(1)">&gt;</div>
@@ -255,11 +255,11 @@ confettiBtn.addEventListener('click', () => {
 
 <script>
   var images = ['images/savon.jpg', 'images/crayon.jpg', 'images/nike.jpg', 'images/rose.jpg','images/lumiere.jpg','images/chaussette.jpg', 'images/clef.jpg', 'images/couvert.jpg'];
-  var index = 0;
-  var carte = document.querySelector('.card-defile');
-  var image = carte.querySelector('img');
+var index = 0;
+var carte = document.querySelector('.card-defile');
+var image = carte.querySelector('img');
 
-  function defiler(direction) {
+function defiler(direction) {
   // Si direction est négative, on recule d'une image
   // Si direction est positive ou que direction n'est pas défini, on avance d'une image
   if (direction < 0) {
@@ -274,7 +274,16 @@ confettiBtn.addEventListener('click', () => {
     }
   }
   image.src = images[index];
+  
+  // Appelle la fonction defiler() toutes les 3 secondes pour faire défiler les images automatiquement
+  setTimeout(function() {
+    defiler();
+  }, 3000);
 }
+
+// Lance la première image
+defiler();
+
 
 </script>
 
