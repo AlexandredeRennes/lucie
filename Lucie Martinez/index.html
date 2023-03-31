@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lucie Site</title> 
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="love"></div>
+
+<script>
+function moveHeart() {
+  var heart = document.querySelector('.heart');
+  var x = Math.floor(Math.random() * window.innerWidth);
+  var y = Math.floor(Math.random() * window.innerHeight);
+  heart.style.top = y + 'px';
+  heart.style.left = x + 'px';
+}
+
+var counter = 0;
+var intervalId = setInterval(function () {
+  if (counter === 50) {
+    clearInterval(intervalId);
+    return;
+  }
+  moveHeart();
+  counter++;
+}, 1000);
+
+</script>
+
+
+<button id="confetti-btn">Lancer les confettis 🎉</button>
+
+<div id="confetti-container"></div>
+
+<script>
+     const confettiBtn = document.getElementById('confetti-btn');
+const confettiContainer = document.getElementById('confetti-container');
+
+// Fonction pour générer une couleur aléatoire
+function randomColor() {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+confettiBtn.addEventListener('click', () => {
+  for (let i = 0; i < 500; i++) {
+    const confetti = document.createElement('div');
+    confetti.classList.add('confetti');
+    confetti.style.left = Math.random() * 100 + '%';
+    confetti.style.animationDelay = Math.random() * 2 + 's';
+    confetti.style.backgroundColor = randomColor(); // Utilisation de la couleur aléatoire
+    confettiContainer.appendChild(confetti);
+
+ setTimeout(() => {
+    const allConfetti = document.querySelectorAll('.confetti');
+    allConfetti.forEach(confetti => {
+      confetti.remove();
+    });
+  }, 4000);   
+  }
+});
+</script>
+
+  <header>
+    <nav class="wrapper">
+      <ul>
+        <li>
+          <a href="https://cat-bounce.com/" target="https://cat-bounce.com/" title="Acceuil">Acceuil</a>
+        </li>
+        <li>
+          <a href="" title="Photo">Photo</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="insta.html" target="insta.html"title="Drôle">Drôle</a>
+            </li>
+            <li>
+              <a href="moi.html" target="moi.html" title="Mignon">Stylé</a>
+            </li>
+            <li>
+              <a href="video.html" target="video.html"title="Tiktok">Tiktok</a>
+            </li>
+          </ul>
+        </li>
+         <li>
+          <a href="https://www.instagram.com/alexandre.halet/" target="https://www.instagram.com/alexandre.halet/" title="Contact du créateur">Contact du créateur</a>
+        </li>
+      </ul>
+    </nav>
+  <div class="banner">
+  
+  <div class="container">
+  <h1>Ma copine</h1>
+  <h2>Joyeux anniversaire Lucie</h2>
+  <a href="#joinus-section"class="btn-blue">Viiite</a>
+</div>
+</div>  
+  </header>
+
+    
+
+<div>
+  
+</div>
+  
+<div class="container">
+
+          
+          <h2>- HISTOIRE -</h2>
+          <div id="joinus-section"></div>
+          <div class="card-texte">
+          <p> Lucie et Alexandre se sont rencontrés un soir de Juillet 2022 sur le port de La Rochelle. Au fils de longues soirées au bord de la plage de La Concurrence (on peut la voir sur la carte, regarde stp j’ai pas mis ça pour rien) , les deux jeunes amoureux ont commencé à se rapprocher.
+          Le véritable début de leur histoire tout le deux prend source dans la charmante ville du Mans. Ils connurent quelques difficultés pour trouver un logement et finissent par trouver logis dans l’appartement miteux d’un ami d’Alexandre. C’est dans le lit de ce logis qu’ils firent leur première fois. Quelques jours après leur visite au Mans, Lucie et Alexandre officialiseront leur couple, le 11 novembre 2023.
+
+          S’ensuit de nombreuses aventures dans les rues pavés de Lille et dans les jolies bords de mer bretons (et aussi de nombreuses heures à s’endormir ensemble au téléphone). Durant leurs escapades, les deux foufous se sont beaucoup amusés, fabriqués des centaines de souvenirs gravé dans leur têtes écrit dans leur journal.  
+          </p>
+          <a href=""></a>
+          </div>
+
+          <div class="card-center">
+           <p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d22111.09349081122!2d-1.2059380120663379!3d46.15300248598028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sport%20la%20rochelle!5e0!3m2!1sfr!2sfr!4v1679060070047!5m2!1sfr!2sfr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer"></iframe>
+          </p>
+          </div>
+
+          
+          <h2>- ANECDOTE -</h2>
+          <div class="card-texte">
+
+          <p>
+            Une de leur plus fameuse anecdote est d’après moi leur aventure sur l’Ile Tascon. Le couple de déglingos n’aurait pas tenu compte des conseils des passant et aurait failli se noyer sur en essayant de traverser la berge. Alexandre aurait alors dans un acte de bravoure exceptionnel sauvé Lucie de la noyade. Cette histoire est bien entendu à prendre avec des pincettes. En effet, il est possible que l’histoire soit légèrement exagéré.
+          </p>
+          </div>
+
+         
+
+          <h2> - UN COUPLE D'ARTISTE - </h2>
+          <div class="card-texte">
+          <p>Au cours de leurs aventures, les deux tourtereaux ont été aménés à créer des oeuvres d'arts magnifiques. Nous pouvons les voir ici dans leur état naturelle en train de confectionner une toile. Ils se sont aussi amuser à l’art de la sculpture selon les ragots. Cependant, leur plus fameuse oeuvre aurait malheuresement été jeté par la fenêtre. On espère les voir très vite concevoir une nouvelle pièce magnifique. </p>
+        </div>
+          
+          <video src="images/video.mp4" controls>
+  Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+          
+
+          <h1> - GALERIE D'ART - </h1>
+          <div class="cards">
+
+
+<div class="card-container">
+  
+
+      <div class="card">
+        <img src="images/tab1.jpg"alt="">
+        <h4>Coeur en couleur</h4>
+        <a href="images/tab1.jpg" target="images/tab1.jpg" class="btn-blue">L'admirer</a>
+      </div>
+
+      <div class="card-center">
+      <img src="images/tableau2.jpg"alt="">
+        <h4>Pluie d'amour</h4>
+        <a href="images/tableau2.jpg" target="images/tableau2.jpg"class="btn-blue2">L'admirer</a>
+    </div>
+
+    <div class="card">
+      <img src="images/lucie.jpg"alt="">
+      <h4>Du haut d'une falaise</h4>
+      <a href="images/lucie.jpg" target="images/lucie.jpg" class="btn-blue">L'admirer</a>
+    </div>
+</div>
+            
+             
+
+  
+
+
+  
+    <h1>Choisi ton cadeau!</h1>
+
+
+<div class="card-container">
+  
+
+      <div class="card-center">
+        <img src="images/n1.jpg"alt="Truc méga stylé">
+        <h4>Truc méga stylé</h4>
+        <a href="https://www.funimada.com/assets/images/cards/big/bday-908.gif" target="https://www.funimada.com/assets/images/cards/big/bday-908.gif" class="btn-blue2">Cadeau 1</a>
+      </div>
+
+      <div class="card">
+      <img src="images/n2.jpg"alt="Devine c'est fou">
+      <h4>Devine c'est fou</h4>
+      <a href="cadeau.html" target="cadeau.html" class="btn-blue">Cadeau 2</a>
+    </div>
+
+    <div class="card-center">
+      <img src="images/n3.jpg"alt="Vraie gift promis">
+      <h4>Vraie cadeau promis</h4>
+      <a href="#" class="btn-blue2">Cadeau 3</a>
+    </div>
+</div>
+      
+    
+    
+      <div class="card-vogue">
+        <img src="images/pasidee.jpg"alt="French Magazine">
+        <a href="images/yo.mp4" target="mages/yo.mp4">
+        
+        <h4>J'ai plus d'idées</h4>
+        <p>je t'aime</p>
+        <a href="#" class="btn-blue">Remonte</a>
+      </div>
+  </div>
+
+
+    <div class="card-vogue">
+      <h4>Durée de notre amour : </h4>
+      <div class="chronometer">
+          <span id="days">00</span>:
+          <span id="hours">00</span>:
+          <span id="minutes">00</span>:
+          <span id="seconds">00</span>
+       
+        
+      </div>
+
+    </div>
+    <a href="https://www.youtube.com/watch?v=OTmADYmrWGA" target="https://www.youtube.com/watch?v=OTmADYmrWGA">
+    <div class="card-center">
+      <img src="images/plage.jpg">
+    </div>
+    </a>
+
+<h1> - OH OH - </h1>
+<div class="card-defile" onclick="defiler()">
+  <img src="images/savon.jpg" alt="Image 1">
+    <div class="fleche-gauche" onclick="defiler(-1)">&lt;</div>
+    <div class="fleche-droite" onclick="defiler(1)">&gt;</div>
+</div>
+
+
+
+<script>
+  var images = ['images/savon.jpg', 'images/crayon.jpg', 'images/nike.jpg', 'images/rose.jpg','images/lumiere.jpg','images/chaussette.jpg', 'images/clef.jpg', 'images/couvert.jpg'];
+  var index = 0;
+  var carte = document.querySelector('.card-defile');
+  var image = carte.querySelector('img');
+
+  function defiler(direction) {
+  // Si direction est négative, on recule d'une image
+  // Si direction est positive ou que direction n'est pas défini, on avance d'une image
+  if (direction < 0) {
+    index--;
+    if (index < 0) {
+      index = images.length - 1;
+    }
+  } else {
+    index++;
+    if (index >= images.length) {
+      index = 0;
+    }
+  }
+  image.src = images[index];
+}
+
+</script>
+
+
+
+    <div class="card-bisous">
+      <h2>Bisous patate ❤️</h2>
+    </div>
+
+
+
+<body onclick="createHeart(event)">
+  <div class="heart"></div>
+</body>
+
+<script>
+    // Sélectionner les éléments HTML
+  const daysDisplay = document.getElementById('days'); 
+  const hoursDisplay = document.getElementById('hours');
+  const minutesDisplay = document.getElementById('minutes');
+  const secondsDisplay = document.getElementById('seconds');
+
+// Initialiser les variables de temps
+let days = 141;
+let hours = 15;
+let minutes = 9;
+let seconds = 7;
+
+// Fonction pour afficher le temps écoulé depuis la rencontre
+function displayTime() {
+  // Mettre à jour les variables de temps
+  seconds++;
+  if (seconds === 60) {
+    minutes++;
+    seconds = 0;
+  }
+  if (minutes === 60) {
+    hours++;
+    minutes = 0;
+  }
+  if (hours === 24) {
+    hours++;
+    minutes = 0;
+  }
+
+  // Ajouter un zéro devant les chiffres si nécessaire
+  const formattedDays = days.toString().padStart(2, '0');
+  const formattedHours = hours.toString().padStart(2, '0');
+  const formattedMinutes = minutes.toString().padStart(2, '0');
+  const formattedSeconds = seconds.toString().padStart(2, '0');
+
+  // Mettre à jour l'affichage sur la page
+  daysDisplay.textContent = formattedDays;
+  hoursDisplay.textContent = formattedHours;
+  minutesDisplay.textContent = formattedMinutes;
+  secondsDisplay.textContent = formattedSeconds;
+}
+
+// Mettre à jour l'affichage toutes les secondes
+setInterval(displayTime, 1000);
+
+
+</script>
+
+
+<script> function createHeart(event) {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  heart.style.top = `${event.clientY - 15}px`;
+  heart.style.left = `${event.clientX - 15}px`;
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 1000);
+}
+
+
+
+</script>
+
+
+<footer>
+  <div class="containere">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Adresse</h3>
+        <ul>
+          <li>11 rue de l'Amour</li>
+          <li>11023 Lovecity</li>
+          <li>France</li>
+          <li>bisous joyeux anniversaire patate</li>
+          <li>
+              <a href="https://www.amazon.fr/bo%C3%AEte-go%C3%BBter-recettes-go%C3%BBters-gourmands-ebook/dp/B0BYWHR5MD/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=23VWF3DLEA65N&keywords=alexandre+halet&qid=1679594677&sprefix=alexandre+halet%2Caps%2C153&sr=8-1" target="https://www.amazon.fr/bo%C3%AEte-go%C3%BBter-recettes-go%C3%BBters-gourmands-ebook/dp/B0BYWHR5MD/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=23VWF3DLEA65N&keywords=alexandre+halet&qid=1679594677&sprefix=alexandre+halet%2Caps%2C153&sr=8-1"  title="truc">Achetez le svp</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Contact</h3>
+        <ul>
+          <li>Téléphone : +33 7 83 30 23 26</li>
+          <li>Email : alex.halet@gmail.com</li>
+          <li>Voiture : Clio 2 rouge</li>
+          <li>Copine : Lucie Martinez</li>
+
+          
+        </ul>
+      </div>
+    </div>
+      <div class="footer-bottom">
+       <p>&copy; 2023 Alexouche. Tous droits réservés.</p>
+      </div>
+    
+    
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+</body>
+
+</html>
